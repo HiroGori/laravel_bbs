@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     protected $fillable = [
-		'body',
-	];
+        'body',
+    ];
 
-	public function post()
-	{
-		return $this->belongTo('App\Post');
-	}
+    public function post()
+    {
+        return $this->belongTo('App\Post');
+    }
 }
