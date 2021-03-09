@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'PostController@index')->name('top');
+Route::get('/', function () {
+    return view('welcome');
+});
