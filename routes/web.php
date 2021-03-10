@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'PostController@index')->name('top');
+Route::get('/', 'PostsController@index')->name('top');
