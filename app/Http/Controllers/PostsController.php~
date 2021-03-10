@@ -7,10 +7,19 @@ use App\Post;
 
 class PostsController extends Controller
 {
-    public functon index()
+    public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->get();
 
         return view('posts.index', ['posts' => $posts]);
     }
+
+    public function create()
+	{
+		return view('posts.create');
+	}
+
+	public function store(Request $request)
+	{
+		$params = $request->validate([
 }
