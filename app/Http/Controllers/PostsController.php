@@ -45,9 +45,9 @@ class PostsController extends Controller
         $params = $request->validate([
             'title' => 'required|max:50',
             'body' => 'required|max:2000'
-        ])
+        ]);
         $post = Post::findOrFail($post_id);
         $post->fill($params)->save();
-        return redirect()->route('posts/show', ['post' => $post]);
+        return redirect()->route('posts.show', ['post' => $post]);
     }
 }
