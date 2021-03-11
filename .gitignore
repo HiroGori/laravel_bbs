@@ -10,4 +10,14 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
 *~
+*.swp
+*.un~
+*.vscode
+Thumbs.db
+.DS_Store
+*.a
+*.o
+*.class
+.pc/
